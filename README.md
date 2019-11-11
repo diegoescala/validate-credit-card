@@ -1,6 +1,6 @@
 # validate-credit-card
 
-Credit card number validator
+A Clojure library for validating credit card numbers.
 
 ## Usage
 
