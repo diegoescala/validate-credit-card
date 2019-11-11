@@ -18,5 +18,3 @@
         last-digit (compute-next (subs numstr 0 (dec (count numstr))))]
     (= (- (int (last numstr)) (int \0))
        last-digit)))
-
-(validate "4242424242424242")
