@@ -1,5 +1,5 @@
 (defproject validate-credit-card "1.0.0"
-  :description "FIXME: write description"
+  :description "A Clojure library for easily validating credit card numbers"
   :url "https://github.com/diegoescala/validate-credit-card"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
