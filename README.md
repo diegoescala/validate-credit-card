@@ -4,7 +4,25 @@ A Clojure library for validating credit card numbers.
 
 ## Usage
 
-TODO
+```clojure
+[validate-credit-card "1.0.0"]
+
+;; In your ns statement:
+(ns my.ns
+  (:require [validate-credit-card.core :refer :all]))
+```
+
+### Validate a credit card!
+
+```
+(valid? "4242424242424242")
+```
+
+### Generate a Luhn checksum digit
+
+```
+(compute-checksum "424242424242424")
+```
 
 ## License
 

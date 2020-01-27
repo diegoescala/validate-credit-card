@@ -1,6 +1,7 @@
 (ns validate-credit-card.core)
 
-(defn compute-next
+(defn compute-checksum
+  "Computes the Luhn checksum digit"
   [numstr]
   (let [sum (->> numstr
                  (clojure.string/reverse)
@@ -13,8 +14,9 @@
     (mod sum 10)))
 
 (defn valid?
+  "Tests whether a credit card number is valid"
   [num]
   (let [numstr (str num)
-        last-digit (compute-next (subs numstr 0 (dec (count numstr))))]
+        last-digit (compute-checksum (subs numstr 0 (dec (count numstr))))]
     (= (- (int (last numstr)) (int \0))
        last-digit)))
