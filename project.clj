@@ -5,5 +5,5 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]]
   :repl-options {:init-ns validate-credit-card.core}
-  :deploy-repositories [[:clojars {:url "[https://clojars.org/](https://clojars.org/)" 
-                                   :sign-releases false}]])
+  :deploy-repositories [["releases"  {:sign-releases false :url "https://clojars.org/repo"}]
+                        ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]])
