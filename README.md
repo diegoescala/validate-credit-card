@@ -4,7 +4,7 @@ A Clojure library for validating credit card numbers.
 
 ## The basics
 
-Credit card numbers follow a pattern that makes it easy to check whether a particular number is valid. This makes it easy to check whether, for example, a customer placing an online order may have entered their credit card details incorrectly. Validating the number on the spot is much easier and less resource intensive than verifying the number with the financial institution.
+Credit card numbers follow a pattern that makes it easy to check whether a particular number is valid. This helps you verify whether, for example, a customer placing an online order may have entered their credit card details incorrectly. Validating the number on the spot is much easier and less resource intensive than verifying the number with the financial institution.
 
 The algorithm used for credit card numbers is known as the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm "Wikipedia article on the Luhn algorithm"). In the Luhn algorithm, the last digit is what's known as a checksum digit -- it's computed based on all the other digits, and tells you whether the number is valid.
 
