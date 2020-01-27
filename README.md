@@ -17,7 +17,7 @@ This library works by computing the checksum digit for all but the last digit of
 ## Usage
 
 ```clojure
-[validate-credit-card "1.0.0"]
+[diegoescala/validate-credit-card "1.0.0"]
 
 ;; In your ns statement:
 (ns my.ns
