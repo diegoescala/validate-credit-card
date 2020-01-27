@@ -12,7 +12,7 @@
                  (* 9))]
     (mod sum 10)))
 
-(defn validate
+(defn valid?
   [num]
   (let [numstr (str num)
         last-digit (compute-next (subs numstr 0 (dec (count numstr))))]
